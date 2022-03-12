@@ -79,11 +79,15 @@ nav a{
     border-radius: .4rem;
     width: 20rem;
     padding: 1rem 0;
+    font-size: 1.6rem;
 }
 
 
 @media screen and (max-width:768px){
-    .content{
+    html{
+        font-size: 50%;
+    }
+    /* .content{
         margin-top: 5rem;
     }
     .content h1{
@@ -95,7 +99,7 @@ nav a{
         margin-top: 2.5rem;
         margin-bottom: 5rem;
         font-size: 1.3rem;
-    }
+    } */
 }
 
 
