@@ -2,6 +2,9 @@
  html{
      font-size: 62.5%;
  }
+ body{
+     overflow-x: hidden;
+ }
 .header{
     width: 100%;
     height: 100vh;
@@ -81,25 +84,103 @@ nav a{
     padding: 1rem 0;
     font-size: 1.6rem;
 }
+/* product section  */
+.product{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/img2.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    position: relative;
+}
+.adress-container::before{
+    content: '';
+    position: absolute;
+    background: #000;
+    width:30rem;
+    height: 20rem;
+    top: 40%;
+    right: 0%;
+    opacity: 0.3;
+    /* z-index: -1; */
+}
+.address{
+    width:30rem;
+    height: 20rem;
+    padding: 2rem;
+    top: 40%;
+    right: 0%;
+    position: absolute;
+    color: #fff;
+}
+.arrow{
+    width: 90%; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    font-size: 4rem;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+/* about section start  */
+.about{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-details{
+    padding: 0 6rem;
+    
+}
+.about-details h1{
+    color: #25313C;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+.about-details p{
+    font-size: 2rem;
+    line-height: 2.9rem;
+    color: #6D7D8B;
+}
 
 @media screen and (max-width:768px){
     html{
-        font-size: 50%;
+        font-size: 45%;
     }
-    /* .content{
-        margin-top: 5rem;
+    /* product area  */
+    .product{
+        height: 100vh;
+        max-height: 100vh;
     }
-    .content h1{
-        font-size:2.8rem;
-        line-height: 5rem;
-        padding: 0 2rem;
+    .adress-container::before{
+        content: '';
+        position: absolute;
+        background: #000;
+        width:30rem;
+        height: 20rem;
+        top: 5%;
+        right: 0%;
+        opacity: 0.3;
+        /* z-index: -1; */
     }
-    .content p{
-        margin-top: 2.5rem;
-        margin-bottom: 5rem;
-        font-size: 1.3rem;
-    } */
+    .address{
+        width:30rem;
+        height: 20rem;
+        padding: 2rem;
+        top: 10%;
+        right: 0%;
+        position: absolute;
+        color: #fff;
+    }
+
 }
 
 
