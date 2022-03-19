@@ -25,7 +25,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 nav a{
     text-decoration: none;
@@ -150,6 +150,98 @@ nav a{
     line-height: 2.9rem;
     color: #6D7D8B;
 }
+/* community section start  */
+.community{
+    margin-top: 8rem;
+}
+.skill-pic{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.skill-img{
+    height: 12rem;
+}
+.skill-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* need more realtor section  */
+.realtor{
+    background-image: url('../img/img1.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    padding: 7rem 0;
+    margin-top: 5rem;
+}
+
+    /* footer section  */
+    footer{
+        background: #333333;
+        height: 60vh;
+        display: grid;
+        place-items: center;
+        color: #fff;
+    }
+    .comapny a{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    .comapny h1{
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .search-bar{
+        position: relative;
+        width: 20rem;
+    }
+    .search-bar h1{
+        font-size: 1.6rem;
+        color:#fff;
+        margin-bottom: 2.7rem;
+        margin-top: 3rem;
+    }
+    .input{
+        width: 18rem;
+        padding: 1rem;
+        border: none;
+        border-radius: .5rem;
+
+    }
+    .input:focus{
+        outline: none;
+    }
+    .icon{
+        position: absolute;
+        top: 8.5rem;
+        right:1.9rem;
+        font-size: 1.7rem;
+        color: #000;
+    }
+    .input::placeholder{
+        font-size: 1.6rem;
+    }
+    .search-bar a{
+        font-size: 1.4rem;
+        color: #fff;
+        margin-top: 1.5rem;
+        display: inline-block;
+    }
+    /* footer section  */
+    footer{
+        display: grid;
+        place-items: center;
+    }
+    .footer-logo a{
+        color: #fff;
+        font-size:1.4rem;
+
+    }
 
 @media screen and (max-width:768px){
     html{
@@ -181,6 +273,39 @@ nav a{
         color: #fff;
     }
 
+    /* community section start  */
+    .community{
+        margin-top: 7rem;
+    }
+    .community-text{
+        width: 75%;
+    }
+    .skill-pic{
+        padding-top: 3rem;
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    /* footer section */
+    footer{
+        height: 70vh;
+        max-height: 70vh;
+
+    }
+    .footer-details{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 1.4rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer h4{
+        margin-bottom: 1rem;
+    }
 }
 
 
