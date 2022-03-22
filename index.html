@@ -19,13 +19,13 @@
     <!-- header section area  -->
     <header class="header">
         <div class="container mx-auto header-content">
-            <div class="d-md-none w-100 mx-auto">
-                <div class="d-flex justify-content-between text-white">
+            <div class="d-md-none container mx-auto">
+                <div class="d-flex justify-content-between text-white align-items-center hamburger">
                     <h1 class="text-white display-3">Realtors</h1>
-                    <i class="fa-solid fa-bars fs-3"></i>
+                    <i id="navbar" class="fa-solid fa-bars fs-2"></i>
                 </div>
             </div>
-            <div class="d-none d-md-block w-75">
+            <div class="d-md-block nav">
                 <nav>
                     <a href="#">About</a>
                     <a href="#">Community</a>
@@ -48,6 +48,7 @@
 
     <!-- our product section  -->
     <section class="product">
+        <img id="img" src="img/img2.png" alt="">
         <div class="adress-container">
             <div class="address">
                 <h3 class="fs-2">Feature Listing</h3>
@@ -57,8 +58,8 @@
             </div>
         </div>
         <div class="arrow">
-            <i class="fa-solid fa-arrow-left"></i>
-            <i class="fa-solid fa-arrow-right text-white"></i>
+            <i onclick="imageChange(-1)" class="fa-solid fa-arrow-left cursor"></i>
+            <i onclick="imageChange(1)" class="fa-solid fa-arrow-right cursor text-white"></i>
         </div>
     </section>
 
@@ -179,7 +180,7 @@
         </div>
     </footer>
 
-
+<script src="script.js"></script>
 
 </body>
 

@@ -12,7 +12,7 @@
     background-image:url("../img/img4.png");
     background-position: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    /* z-index: -1; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -20,9 +20,14 @@
     /* position: relative; */
     /* background: red; */
 }
+.nav{
+    /* display: none; */
+    width: 75%;
+    /* z-index: 99; */
+}
 nav{
     cursor:pointer;
-    width: 100%;
+    width: 105%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,8 +40,9 @@ nav a{
 }
 .header-content{
     z-index: 99;
-    position: absolute;
-    top: 3.7rem;
+    /* position: absolute; */
+    /* z-index: 88; */
+    /* top: 3.7rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +59,7 @@ nav a{
     background-color: #000;
     opacity: 0.4;
     background-blend-mode: overlay;
-    
+    /* z-index: -44; */
 }
 
 /* content section area  */
@@ -88,11 +94,15 @@ nav a{
 .product{
     width: 100%;
     height: 100vh;
-    background-image: url('../img/img2.png');
+    /* background-image: url('../img/img2.png'); */
     background-position: cover;
     background-repeat: no-repeat;
     /* object-fit: cover; */
     position: relative;
+}
+.product img{
+    width: 100%;
+    height: 100%;
 }
 .adress-container::before{
     content: '';
@@ -126,7 +136,9 @@ nav a{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+.cursor{
+    cursor: pointer;
+}
 /* about section start  */
 .about{
     width: 100%;
@@ -247,6 +259,45 @@ nav a{
     html{
         font-size: 45%;
     }
+    .content{
+        /* margin-top: -120rem; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .hamburger{
+        margin-top: 15rem;
+    }
+    .nav{
+        display: block;
+        width: 50%;
+        height: 100vh;
+        background: rgba(35, 32, 78, 0.801);
+        padding: 2rem;
+        transition: .3s linear;
+        transform: translateX(-700px);
+        z-index: 666;
+    }
+    nav{
+        flex-direction: column;
+    }
+     nav a{
+         display: block;
+         margin-top: 2.1rem;
+         font-size: 2.4rem!important;
+         text-align: center;
+         transition: .3s ease;
+         cursor: pointer;
+     }
+     nav a:hover{
+         background-color: #25313C;
+     }
+     .mobile-nav{
+         transition: .3s ease;
+         transform: translateX(-17.5rem);
+     }
+
     /* product area  */
     .product{
         height: 100vh;
